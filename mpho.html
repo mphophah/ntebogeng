@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking with Ntebogen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right top, #ffe9e3, #fff0f7);
+      color: #2c2c2c;
+      overflow-x: hidden;
+      animation: fadeInBody 2s ease-in-out;
+    }
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    header {
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      background: url('https://i.ibb.co/v1PrsLg/cooking-bg.jpg') center/cover no-repeat;
+      color: white;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #fff8f1;
+      text-shadow: 0 4px 12px #d67b9a;
+      animation: glowText 3s ease-in-out infinite alternate;
+    }
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #ffa7c4; }
+      to { text-shadow: 0 0 20px #ff6b9e; }
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #ffe8f2;
+    }
+    main {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 1rem;
+      display: grid;
+      gap: 3rem;
+      animation: slideInMain 1.5s ease-in;
+    }
+    @keyframes slideInMain {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .recipe {
+      background: #fff;
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: 0 8px 40px rgba(255, 105, 135, 0.2);
+      transform: rotateX(0deg) rotateY(0deg);
+      transition: transform 0.6s ease-in-out, box-shadow 0.6s ease;
+    }
+    .recipe:hover {
+      transform: rotateX(2deg) rotateY(3deg) scale(1.02);
+      box-shadow: 0 12px 60px rgba(255, 105, 135, 0.4);
+    }
+    .recipe h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff4e72;
+      position: relative;
+    }
+    .recipe h2::before {
+      content: '🍽️';
+      margin-right: 0.5rem;
+    }
+    .recipe ul, .recipe ol {
+      margin-left: 2rem;
+      line-height: 1.6;
+    }
+    .recipe li {
+      padding-bottom: 0.3rem;
+    }
+    .tiktok-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(145deg, #ffa07a, #ff6b9e);
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      box-shadow: 0 0 20px rgba(255, 105, 135, 0.3);
+      text-decoration: none;
+      transition: all 0.4s ease;
+    }
+    .tiktok-link:hover {
+      transform: scale(1.1);
+      background: linear-gradient(145deg, #ffc2d1, #ffb6b9);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff0f5;
+      font-size: 1rem;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ntebogeng's Quantum Kitchen</h1>
+    <p>Where Taste Meets Motion & Beauty</p>
+  </header>
+  <main>
+    <div class="recipe">
+      <h2>Spicy Chicken Stew</h2>
+      <p><strong>Ingredients:</strong></p>
+      <ul>
+        <li>500g chicken thighs</li>
+        <li>2 tomatoes, grated</li>
+        <li>1 onion, chopped</li>
+        <li>1 tsp garlic & ginger</li>
+        <li>1 tsp curry powder</li>
+        <li>Salt & pepper</li>
+      </ul>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Sauté onion in oil until soft.</li>
+        <li>Add garlic & ginger, stir for 1 minute.</li>
+        <li>Add chicken, cook until browned.</li>
+        <li>Add tomatoes and spices, simmer 20 minutes.</li>
+        <li>Serve hot with pap or rice.</li>
+      </ol>
+    </div>
+    <div class="recipe">
+      <h2>Classic Vetkoek with Mince</h2>
+      <p><strong>Ingredients:</strong></p>
+      <ul>
+        <li>2 cups flour</li>
+        <li>1 tsp yeast</li>
+        <li>1/2 tsp salt</li>
+        <li>3/4 cup warm water</li>
+        <li>500g beef mince</li>
+        <li>1 onion, chopped</li>
+      </ul>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Mix flour, yeast, salt and water. Let rise 1 hour.</li>
+        <li>Fry spoonfuls of dough until golden.</li>
+        <li>Sauté onion, add mince, cook until browned.</li>
+        <li>Fill vetkoek with mince. Enjoy!</li>
+      </ol>
+    </div>
+    <div style="text-align: center;">
+      <a class="tiktok-link" href="https://www.tiktok.com/@ntebogengcooks" target="_blank">🍰 Follow me on TikTok 🍰</a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Ntebogeng's Quantum Kitchen 🍓 | Designed for Queens Who Cook 👑
+  </footer>
+</body>
+</html>
